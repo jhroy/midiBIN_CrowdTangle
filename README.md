@@ -30,12 +30,13 @@
 
   1. [Extension chrome](https://chrome.google.com/webstore/detail/crowdtangle-link-checker/klakndphagmmfkpelfkgjbkimjihpmkh)
 
-    - exemple avec [texte d'opinion dans *Le Devoir*](https://www.ledevoir.com/opinion/idees/594650/qu-est-ce-qu-une-universite)
+      - exemple avec [texte d'opinion dans *Le Devoir*](https://www.ledevoir.com/opinion/idees/594650/qu-est-ce-qu-une-universite)
+    
   
   2. [*Dashboard*](https://www.crowdtangle.com/)
-
-    - Exemple avec [Valnet](https://www.valnetinc.com/)
-      - Pages Facebook
-      - Comptes Instagram
+      - Exemple avec [Valnet](https://www.valnetinc.com/)
+        - [Pages Facebook](fichiers/listePages.csv)
+        - [Comptes Instagram](fichiers/comptesInsta.csv)
+      
   
   3. [API](https://github.com/CrowdTangle/API/wiki)
