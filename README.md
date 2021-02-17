@@ -34,9 +34,24 @@
     
   
   2. [*Dashboard*](https://www.crowdtangle.com/)
-      - Exemple avec [Valnet](https://www.valnetinc.com/)
+      - Se créer des listes et les *manage*. Exemple avec [Valnet](https://www.valnetinc.com/)
         - [Pages Facebook](fichiers/listePages.csv)
         - [Comptes Instagram](fichiers/comptesInsta.csv)
       
+      - Explorer ces listes. Exemple avec IIJ:
+        - [First Nations Pages](https://apps.crowdtangle.com/iij/lists/1347336)
+        - [First Nations Groups](https://apps.crowdtangle.com/iij/lists/1388572)
+      
+      - *Historical search*
+
+      - [*Search*](https://apps.crowdtangle.com/search/results)
+        - Avec autres réseaux: Insta, Reddit, Twitter.
+        - Changements dans les fonctionnalités:
+          - En 2020, retournait **30 000** résultats
+          - En janvier 2021, ne retournait plus que **10 000** résultats
+          - Depuis quelques jours, retourne **300 000 résultats*** 
+        - Copier l'URL d'une requête si vous en faites plusieurs.
+        - Exemple: tout le FB belge en janvier 2020 (pour avoir février, il suffirait de changer les champs `customStartDate`, `customEndDate`, `customChartStartDate` et `customChartEndDate`:
+          [`https://apps.crowdtangle.com/search/results?includedCountries=BE&customStartDate=2020-01-01T00:00:00&customEndDate=2020-02-01T00:00:00&customChartStartDate=2020-01-01T00:00:00&customChartEndDate=2020-02-01T00:00:00&platform=facebook&postTypes=&producerTypes=3&q=&sortBy=score&sortOrder=desc&timeframe=custom`](https://apps.crowdtangle.com/search/results?includedCountries=BE&customStartDate=2020-01-01T00:00:00&customEndDate=2020-02-01T00:00:00&customChartStartDate=2020-01-01T00:00:00&customChartEndDate=2020-02-01T00:00:00&platform=facebook&postTypes=&producerTypes=3&q=&sortBy=score&sortOrder=desc&timeframe=custom)
   
   3. [API](https://github.com/CrowdTangle/API/wiki)
