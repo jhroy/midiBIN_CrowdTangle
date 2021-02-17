@@ -14,6 +14,22 @@
 
 - [Symeonidis, I., Tsormpatzoudi, P. et Preneel, B. (2015). Collateral damage of Facebook Apps: an enhanced privacy scoring model. Dans IACR Cryptology EPrint Archive](https://eprint.iacr.org/2015/456.pdf).
 
-- Résultat: le «meltdown» [Cambridge Analytica](https://www.economist.com/leaders/2018/03/22/facebook-faces-a-reputational-meltdown)
+- Résultat: le «meltdown» [**Cambridge Analytica**](https://www.economist.com/leaders/2018/03/22/facebook-faces-a-reputational-meltdown)
 
 <img src="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20180324_LDD001_0.jpg" width=25%>
+
+### CrowdTangle
+
+- Créé en 2015 ([brevet](https://patents.google.com/patent/US20150169587A1/en?inventor=Brandon+Ashley+Silverman&assignee=Openpage+Labs+Inc.+d%2fb%2fa+CrowdTangle))
+
+- Acquis par Facebook en 2016.
+
+- Accessible à chercheuses.eurs dans le cadre du partenariat [**Social Science One** de Harvard](https://socialscience.one/partnerships)
+
+- Prend trois formes:
+
+  1. [Extension chrome](https://chrome.google.com/webstore/detail/crowdtangle-link-checker/klakndphagmmfkpelfkgjbkimjihpmkh)
+  
+  2. [*Dashboard*](https://www.crowdtangle.com/)
+  
+  3. [API](https://github.com/CrowdTangle/API/wiki)
