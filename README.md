@@ -80,6 +80,80 @@
         Exemple avec l'une des listes vues plus haut, **First nations pages** qui regroupe plus de 800 pages. Son numéro est *1347336*. Avec le jeton, ce numéro permet de construire un appel à l'API de CrowdTangle. Voici un exemple. [Cette liste de posts mentionnant la Covid-19 dans les pages ou groupes Facebook autochtones](http://bit.ly/covidIIJ) est peuplée automatiquement par des appels simples comme celui-ci (pour les pages; un autre appel doit être fait pour les groupes):
         
         `https://api.crowdtangle.com/posts?token={votreToken}&listIds=1347336&count=100`
+        
+        Va retourner quelque chose comme ceci:
+        
+        ```json
+        {
+          "platformId": "1834379636802508_2818911758349286",
+          "platform": "Facebook",
+          "date": "2021-02-18 00:22:24",
+          "updated": "2021-02-18 03:12:23",
+          "type": "photo",
+          "message": "COMMUNIQUÉ DE PRESSE POUR DIFFUSION IMMÉDIATE FINANCEMENT MAJEUR VISANT À CONTRER LA CRISE DU LOGEMENT À UASHAT MAK MANI-UTENAM 200 unités sur une période de 5 ans",
+          "expandedLinks": [
+            {
+              "original": "https://www.facebook.com/1834379636802508/photos/a.2216093811964420/2818911728349289/?type=3",
+              "expanded": "https://www.facebook.com/1834379636802508/photos/a.2216093811964420/2818911728349289/?type=3"
+            }
+          ],
+          "link": "https://www.facebook.com/1834379636802508/photos/a.2216093811964420/2818911728349289/?type=3",
+          "postUrl": "https://www.facebook.com/1834379636802508/posts/2818911758349286",
+          "subscriberCount": 3793,
+          "score": 2.473684210526316,
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/s720x720/151623426_2818911731682622_6907612249238609571_o.jpg?_nc_cat=103&ccb=3&_nc_sid=110474&_nc_ohc=VILGJD8JktEAX8r9hYy&_nc_ht=scontent-sjc3-1.xx&tp=7&oh=6ad7f48fef65876da74e7c9ce731c7e8&oe=6054D1D7",
+              "height": 720,
+              "width": 437,
+              "full": "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/s720x720/151623426_2818911731682622_6907612249238609571_o.jpg?_nc_cat=103&ccb=3&_nc_sid=110474&_nc_ohc=VILGJD8JktEAX8r9hYy&_nc_ht=scontent-sjc3-1.xx&tp=7&oh=6ad7f48fef65876da74e7c9ce731c7e8&oe=6054D1D7"
+            }
+          ],
+          "statistics": {
+            "actual": {
+              "likeCount": 10,
+              "shareCount": 32,
+              "commentCount": 0,
+              "loveCount": 5,
+              "wowCount": 0,
+              "hahaCount": 0,
+              "sadCount": 0,
+              "angryCount": 0,
+              "thankfulCount": 0,
+              "careCount": 0
+            },
+            "expected": {
+              "likeCount": 2,
+              "shareCount": 5,
+              "commentCount": 3,
+              "loveCount": 4,
+              "wowCount": 1,
+              "hahaCount": 1,
+              "sadCount": 1,
+              "angryCount": 0,
+              "thankfulCount": 0,
+              "careCount": 1
+            }
+          },
+          "account": {
+            "id": 9967332,
+            "name": "Innu Takuaikan Uashat mak Mani-utenam",
+            "handle": "",
+            "profileImage": "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-1/p200x200/86354059_2510106442563154_6755911830654156800_n.jpg?_nc_cat=108&ccb=3&_nc_sid=dbb9e7&_nc_ohc=khZ1jhwWt8sAX9aINO0&_nc_ht=scontent-sjc3-1.xx&tp=6&oh=e8df41743550947de48e59df4d8b832a&oe=6052C47B",
+            "subscriberCount": 3617,
+            "url": "https://www.facebook.com/1834379636802508",
+            "platform": "Facebook",
+            "platformId": "1834379636802508",
+            "accountType": "facebook_page",
+            "pageAdminTopCountry": "CA",
+            "verified": false
+          },
+          "imageText": "Bureau politique dotgnais I COMMUNIQUÉ PRESSE POUR DIFFUSION IMMÉDIATE FINANCEMENT MAJEUR VISANT À CONTRER CRISE DU MANI-UTENAM de 200 unités Mani-utenam, (ITUM) préliminair p abordables, une ériode Conseil l'obtention Takuaikan mak Mani- majeur pour ogements par Autochtones projet surpopulation difficulté maisons). travers besoins. des logements Canada. n permettrait parcourir besoins combler déclaré Mike Mckenzie, membres Conseil entend d'ITUM soucie pour offrir sans question travail SOURCE: Innu Uashat mak RENSEIGNEMENTS: (ITUM) Secteur communications| ITUM Téléphone:4 962-0327, poste 5315 418444-3264",
+          "legacyId": 0,
+          "id": "9967332|2818911758349286"
+        },
+        ```
 
       - *endpoint* `posts/search`
        
