@@ -22,6 +22,9 @@
 
 <img src="images/apicalypse.png" width=80%>
 
+- [Bruns, A. (2019). After the ‘APIcalypse’: social media platforms and their fight against critical scholarly research. Information, Communication & Society, 22(11), 1544‑1566.](https://doi.org/10.1080/1369118X.2019.1637447)
+
+
 ### CrowdTangle
 
 - Créé en 2015 ([brevet](https://patents.google.com/patent/US20150169587A1/en?inventor=Brandon+Ashley+Silverman&assignee=Openpage+Labs+Inc.+d%2fb%2fa+CrowdTangle))
