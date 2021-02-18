@@ -184,7 +184,7 @@
           
 ### Autres limites
 
-- Attention à l'illustion de la totalité.
+- Attention à l'illusion de la totalité.
   - Par défaut, CrowdTangle ne couvre pas TOUT Facebook.
   - Plus de 6M de pages, groupes publics et profils vérifiés de Facebook, plus de 2M de profils Instagram publics et plus de 20k des *subs* les plus actifs dans Reddit. Pour les pages, le % de couverture diminue avec le nombre d'abonnés ou de «j'aime» pour cette page.
 
