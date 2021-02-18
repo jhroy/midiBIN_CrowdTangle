@@ -189,7 +189,13 @@
   	url = "https://api.crowdtangle.com/posts?token={0}&startDate={1}-{2:02d}-{3:02d}&endDate={4}-{5:02d}-{6:02d}&listIds=1341703&count=100".format(jeton,date.year,date.month,date.day,date2.year,date2.month,date2.day)
   ```
 
+  - CrowdTangle m'a retourné, à chaque extraction, un nombre de *posts* différent, entre 99&nbsp;318 et 82&nbsp;244.
 
+  <img src="images/incoherences1.png" alt="wtf" width=80%>
+  
+  - Au final, j'avais 104&nbsp;423 posts uniques. Seulement 75&nbsp;261 se retrouvaient dans toutes les 24 extractions effectuées.
+
+  <img src="images/incoherences2.png" alt="omg" width=80%>
 
 ### Autres ressources
 
