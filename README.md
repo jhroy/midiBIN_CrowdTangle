@@ -215,7 +215,7 @@
 
   <img src="images/avail.png" alt="Données dispo!" width=80%>
   
-  <img src="images/tronc.png" alt="Données tronquées" width=80% style="padding:10px">
+  <div style="padding:100px;"><img src="images/tronc.png" alt="Données tronquées" width=80%></div>
   
   - Il semble donc y avoir des solutions de rechange.
 
@@ -230,8 +230,10 @@
   - Dispose d'un API, que je n'ai jamais essayé, car il n'est [pas gratuit](https://exportcomments.com/pricing).
   - Pourrait être utilisé en complément de CrowdTangle.
 
-
 ### Autres ressources
+
+- Il peut être possible de moissonner directement des pages Facebook en utilisant plutôt la version mobile d'une page. Il suffit de changer `www` par `m` dans l'URL de la page en question (ou de tout autre type de contenu sur FB).
+  - Exemple: [https://www.facebook.com/leCIRST](https://www.facebook.com/leCIRST) vs [https://m.facebook.com/leCIRST](https://m.facebook.com/leCIRST)  
 
 - Comment consulter plusieurs «pages» d'un API. Recette python d'une boucle `while`.
 
