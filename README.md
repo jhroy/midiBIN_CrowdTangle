@@ -59,7 +59,7 @@
           
         - Ça peut être long...
           
-        <img src="images/oops.png" alt="Faut être patient en titi" width=80%>
+        <img src="images/oops.png" alt="Faut être patient en titi">
 
   
   3. [API](https://github.com/CrowdTangle/API/wiki)
@@ -157,7 +157,7 @@
         
         Attention, cependant:
         
-        <img src="images/default.png" alt="omg" width=80%>
+        <img src="images/default.png" alt="omg">
         
         Autre exemple avec [une liste de politiciens dont on souhaite recueillir les plus récentes publications dans Instagram](https://apps.crowdtangle.com/eluesinsta/lists/1463906). L'appel comporte plus de paramètres, notamment `endDate` pour dire à l'API jusqu'à quelle date/heure chercher, et un `timeframe` pour dire quelle période couvrir avant cette date/heure de fin.
         
@@ -185,7 +185,7 @@
 
 - Les données de CrowdTangle ne semblent pas cohérentes.
   - En février et en juillet 2020, j'ai effectué 24 extractions rigoureusement identiques avec cette liste de [101 médias du Québec](https://apps.crowdtangle.com/mdiasduqubec/lists/1341703).
-  - J'ai demandé à CT de me sortir tous les posts publiés par ces pages durant l'année 2020, une journée à la fois avec les paramètres `startDate` et `endDate`:
+  - J'ai demandé à CT de me sortir tous les posts publiés par ces pages durant l'année 2018, une journée à la fois avec les paramètres `startDate` et `endDate`:
 
   ```python
   for date in listeDates:
@@ -193,17 +193,36 @@
   	url = "https://api.crowdtangle.com/posts?token={0}&startDate={1}-{2:02d}-{3:02d}&endDate={4}-{5:02d}-{6:02d}&listIds=1341703&count=100".format(jeton,date.year,date.month,date.day,date2.year,date2.month,date2.day)
   ```
 
-  - CrowdTangle m'a retourné, à chaque extraction, un nombre de *posts* différent, entre 99&nbsp;318 et 82&nbsp;244.
+  - CrowdTangle m'a retourné, à chaque extraction, un nombre de *posts* **différent**, entre 99&nbsp;318 et 82&nbsp;244.
 
   <img src="images/incoherences1.png" alt="wtf">
   
   - Au final, j'avais 104&nbsp;423 posts uniques. Seulement 75&nbsp;261 se retrouvaient dans toutes les 24 extractions effectuées.
 
   <img src="images/incoherences2.png" alt="omg">
-  
-  - Je travaille à un article sur ces incohérences.
 
 - Les conditions d'utilisation de CrowdTangle sont restrictives.
+
+  <img src="images/nono.png" alt="No-no">
+  
+  - Problème pour publications qui exigent qu'on rende accessibles nos données.
+  - Pourtant, dans son infolettre, CrowdTangle fait des liens vers des articles qui ont utilisé CT.
+
+  <img src="images/infolettre.png" alt="Infolettre de CrowdTangle" width="80%">
+
+  - Cet article par une équipe de Sciences Po Paris est un exemple: [Berriche, M., Altay, S. Internet users engage more with phatic posts than with health misinformation on Facebook. *Palgrave Communications* 6, 71 (2020)](https://doi.org/10.1057/s41599-020-0452-1)
+  - Les auteurs indiquent qu'elles partagent leurs données, mais partiellement (elles retranchent les champs textuels, par exemple, pour des raisons de copyright).
+
+  <img src="images/avail.png" alt="Données dispo!">
+  
+  <img src="images/tronc.png" alt="Données tronquées">
+  
+  - Il semble donc y avoir des solutions de rechange.
+
+- CrowdTangle ne donne accès à aucun commentaire.
+
+  - Si les commentaires sont votre objet de recherche, c'est mal barré.
+  - Mais ici aussi, il y a des solutions de rechange. Le champ `platformId` correspond à un numéro d'identification unique d'une publication Facebook. 
 
 ### Autres ressources
 
