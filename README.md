@@ -227,6 +227,8 @@
   - Si on ajoute `https://www.facebook.com/` avant, on obtient [l'URL de la publication](https://www.facebook.com/255561392521_10157929543417522) (par le journal *Le Canada français*, le 31 décembre dernier).
   - On peut ensuite entrer cet URL dans un autre outil: [**Export Comments**](https://exportcomments.com/)
   - Il vous produit un [fichier xlsx un peu mal foutu](fichiers/exportcomments.xlsx), mais contenant les commentaires, le nom des personnes qui les ont rédigés et leur ID Facebook.
+  - Dispose d'un API, que je n'ai jamais essayé, car il n'est [pas gratuit](https://exportcomments.com/pricing).
+  - Pourrait être utilisé en complément de CrowdTangle.
 
 
 ### Autres ressources
