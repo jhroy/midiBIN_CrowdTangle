@@ -171,13 +171,30 @@
           
 ### Autres limites
 
-- Attention à l'illustion de la totalité. Par défaut, CrowdTangle ne couvre pas TOUT Facebook.
+- Attention à l'illustion de la totalité.
+  - Par défaut, CrowdTangle ne couvre pas TOUT Facebook.
+  - Plus de 6M de pages, groupes publics et profils vérifiés de Facebook, plus de 2M de profils Instagram publics et plus de 20k des *subs* les plus actifs dans Reddit. Pour les pages, le % de couverture diminue avec le nombre d'abonnés ou de «j'aime» pour cette page.
 
-![](https://downloads.intercomcdn.com/i/o/295103366/68f99a7bfc1fac4b6be717aa/Screen+Shot+2021-02-02+at+11.33.28+AM.png)
+  ![](https://downloads.intercomcdn.com/i/o/295103366/68f99a7bfc1fac4b6be717aa/Screen+Shot+2021-02-02+at+11.33.28+AM.png)
+  
+  - Cela dit, dès lors qu'une page ou un groupe est ajouté à une liste, CT va le suivre.
+
+- Les données de CrowdTangle ne semblent pas cohérentes.
+  - En février et en juillet 2020, j'ai effectué 24 extractions rigoureusement identiques avec cette liste de [101 médias du Québec](https://apps.crowdtangle.com/mdiasduqubec/lists/1341703).
+  - J'ai demandé à CT de me sortir tous les posts publiés par ces pages durant l'année 2020, une journée à la fois avec les paramètres `startDate` et `endDate`:
+
+  ```python
+  for date in listeDates:
+  	date2 = date + timedelta(days=1)
+  	url = "https://api.crowdtangle.com/posts?token={0}&startDate={1}-{2:02d}-{3:02d}&endDate={4}-{5:02d}-{6:02d}&listIds=1341703&count=100".format(jeton,date.year,date.month,date.day,date2.year,date2.month,date2.day)
+  ```
+
+
 
 ### Autres ressources
 
-- [Quelles données sont couvertes par CrowdTangle](https://help.crowdtangle.com/en/articles/1140930-what-data-is-crowdtangle-tracking)
+- Comment consulter plusieurs «pages» d'un API. Recette python d'une boucle `while`.
 
+- [Quelles données sont couvertes par CrowdTangle](https://help.crowdtangle.com/en/articles/1140930-what-data-is-crowdtangle-tracking)
 - [Academic FAQ](https://help.crowdtangle.com/en/articles/3323105-academics-researchers-faq)
 - [Naomi Shiffman](nshiffman@fb.com), *Academic Lead*
