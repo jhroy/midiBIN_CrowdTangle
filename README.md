@@ -235,7 +235,28 @@
 - Il peut être possible de moissonner directement des pages Facebook en utilisant plutôt la version mobile d'une page. Il suffit de changer `www` par `m` dans l'URL de la page en question (ou de tout autre type de contenu sur FB).
   - Exemple: [https://www.facebook.com/leCIRST](https://www.facebook.com/leCIRST) vs [https://m.facebook.com/leCIRST](https://m.facebook.com/leCIRST)  
 
-- Comment consulter plusieurs «pages» d'un API. Recette python d'une boucle `while`.
+- Comment consulter plusieurs «pages» d'un API?
+  - Recette python d'une boucle `while`.
+
+  ```python
+	offset = 0 # initialisez cette variable à zéro
+	url = "https://api.crowdtangle.com/posts?token={}&listIds={}&count=100".format(jeton,liste)
+	print(url)
+	req = requests.get(url)
+	posts = req.json()
+	for post in posts["result"]["posts"]:
+  	<extrayez les infos qui vous intéressent>
+
+	while "nextPage" in posts["result"]["pagination"]:
+		offset += 100
+		url = "https://api.crowdtangle.com/posts?oken={}&listIds={}&count=100&offset={}".format(jeton,liste,offset) # ajoutez le paramètre "offset" à votre requête
+		print(url)
+		req = requests.get(url)
+		posts = req.json()
+		for post in posts["result"]["posts"]:
+  		<extrayez les infos qui vous intéressent>
+	print("~"*10)
+  ```
 
 - [Quelles données sont couvertes par CrowdTangle](https://help.crowdtangle.com/en/articles/1140930-what-data-is-crowdtangle-tracking)
 - [Academic FAQ](https://help.crowdtangle.com/en/articles/3323105-academics-researchers-faq)
