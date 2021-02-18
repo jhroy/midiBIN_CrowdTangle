@@ -208,14 +208,14 @@
   - Problème pour publications qui exigent qu'on rende accessibles nos données.
   - Pourtant, dans son infolettre, CrowdTangle fait des liens vers des articles qui ont utilisé CT.
 
-  <img src="images/infolettre.png" alt="Infolettre de CrowdTangle" width="80%">
+  <img src="images/infolettre.png" alt="Infolettre de CrowdTangle" width=80%>
 
   - Cet article par une équipe de Sciences Po Paris est un exemple: [Berriche, M., Altay, S. Internet users engage more with phatic posts than with health misinformation on Facebook. *Palgrave Communications* 6, 71 (2020)](https://doi.org/10.1057/s41599-020-0452-1)
   - Les auteurs indiquent qu'elles partagent leurs données, mais partiellement (elles retranchent les champs textuels, par exemple, pour des raisons de copyright).
 
-  <img src="images/avail.png" alt="Données dispo!">
+  <img src="images/avail.png" alt="Données dispo!" width=80%>
   
-  <img src="images/tronc.png" alt="Données tronquées">
+  <img src="images/tronc.png" alt="Données tronquées" width=80% style="padding:10px">
   
   - Il semble donc y avoir des solutions de rechange.
 
