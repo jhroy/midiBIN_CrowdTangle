@@ -41,6 +41,8 @@
   
   2. [**Tableau de bord**](https://www.crowdtangle.com/) (ou *dashboard*)
 
+      - Créer un tableau de bord «BINfb» et créer liste «faceBIN».
+
       - Se créer des listes et les *manage*. Exemple avec [Valnet](https://www.valnetinc.com/)
         - [Pages Facebook](fichiers/listePages.csv)
         - [Comptes Instagram](fichiers/comptesInsta.csv)
