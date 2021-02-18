@@ -28,11 +28,11 @@
 
 - Prend trois formes:
 
-  1. [Extension chrome](https://chrome.google.com/webstore/detail/crowdtangle-link-checker/klakndphagmmfkpelfkgjbkimjihpmkh)
+  1. [**Extension chrome**](https://chrome.google.com/webstore/detail/crowdtangle-link-checker/klakndphagmmfkpelfkgjbkimjihpmkh)
 
       - exemple avec [texte d'opinion dans *Le Devoir*](https://www.ledevoir.com/opinion/idees/594650/qu-est-ce-qu-une-universite)
   
-  2. [*Dashboard*](https://www.crowdtangle.com/)
+  2. [**Tableau de bord**](https://www.crowdtangle.com/) (ou *dashboard*)
 
       - Se créer des listes et les *manage*. Exemple avec [Valnet](https://www.valnetinc.com/)
         - [Pages Facebook](fichiers/listePages.csv)
@@ -59,13 +59,14 @@
           
         - Ça peut être long...
           
-<img src="images/oops.png" alt="Faut être patient en titi" width=80%>
+        <img src="images/oops.png" alt="Faut être patient en titi" width=80%>
+
   
   3. [API](https://github.com/CrowdTangle/API/wiki)
 
       - Pour une utilisation programmatique. Avec la fonction *search*, ci-dessus, qui permet de retourner 300 000 posts, ce n'est plus guère nécessaire, sinon pour mettre sur pied une veille ou pour aller chercher davantage de posts...
 
-      - Nécessite l'utilisation d'un **jeton** (*API token*). Chaque jeton est associé à un *dashboard*.
+      - Nécessite l'utilisation d'un **jeton** (*API token*). Chaque jeton est associé à un tableau de bord.
 
         - Limites:
 
@@ -74,7 +75,7 @@
 
       - *endpoint* `posts`
 
-        Permet d'aller chercher tous les posts d'une liste donnée, préalablement préparée dans le *dashboard*.
+        Permet d'aller chercher tous les posts d'une liste donnée, préalablement préparée dans un tableau de bord.
         
         Exemple avec l'une des listes vues plus haut, **First nations pages** qui regroupe plus de 800 pages. Son numéro est *1347336*. Avec le jeton, ce numéro permet de construire un appel à l'API de CrowdTangle. Voici un exemple. [Cette liste de posts mentionnant la Covid-19 dans les pages ou groupes Facebook autochtones](http://bit.ly/covidIIJ) est peuplée automatiquement par des appels simples comme celui-ci (pour les pages; un autre appel doit être fait pour les groupes):
         
