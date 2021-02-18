@@ -155,6 +155,10 @@
         },
         ```
         
+        Attention, cependant:
+        
+        <img src="images/default.png" alt="omg" width=80%>
+        
         Autre exemple avec [une liste de politiciens dont on souhaite recueillir les plus récentes publications dans Instagram](https://apps.crowdtangle.com/eluesinsta/lists/1463906). L'appel comporte plus de paramètres, notamment `endDate` pour dire à l'API jusqu'à quelle date/heure chercher, et un `timeframe` pour dire quelle période couvrir avant cette date/heure de fin.
         
         `https://api.crowdtangle.com/posts?token={votreToken}&listIds=1463906&count=100&sortBy=date&timeframe=24%20HOUR&endDate=2021-01-16T22:00:00`
@@ -191,11 +195,15 @@
 
   - CrowdTangle m'a retourné, à chaque extraction, un nombre de *posts* différent, entre 99&nbsp;318 et 82&nbsp;244.
 
-  <img src="images/incoherences1.png" alt="wtf" width=80%>
+  <img src="images/incoherences1.png" alt="wtf">
   
   - Au final, j'avais 104&nbsp;423 posts uniques. Seulement 75&nbsp;261 se retrouvaient dans toutes les 24 extractions effectuées.
 
-  <img src="images/incoherences2.png" alt="omg" width=80%>
+  <img src="images/incoherences2.png" alt="omg">
+  
+  - Je travaille à un article sur ces incohérences.
+
+- Les conditions d'utilisation de CrowdTangle sont restrictives.
 
 ### Autres ressources
 
