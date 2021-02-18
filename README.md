@@ -16,7 +16,11 @@
 
 - Résultat: le «meltdown» [**Cambridge Analytica**](https://www.economist.com/leaders/2018/03/22/facebook-faces-a-reputational-meltdown)
 
-<img src="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20180324_LDD001_0.jpg" width=25%>
+<img src="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20180324_LDD001_0.jpg" width=50%>
+
+- Et Facebook a fermé les écoutilles.
+
+<img src="images/apicalypse.png" width=80%>
 
 ### CrowdTangle
 
