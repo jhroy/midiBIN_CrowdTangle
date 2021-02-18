@@ -71,7 +71,7 @@
         - Limites:
 
           - 100 posts à la fois (pallier avec la pagination)
-          - 6 appels à la minute seulement! (mettre des *sleep* de 10 secondes dans vos scripts)
+          - 6 appels à la minute seulement! (mettre des *sleep* de 10 secondes dans vos scripts 😱)
 
       - *endpoint* `posts`
 
@@ -154,6 +154,10 @@
           "id": "9967332|2818911758349286"
         },
         ```
+        
+        Autre exemple avec [une liste de politiciens dont on souhaite recueillir les plus récentes publications dans Instagram](https://apps.crowdtangle.com/eluesinsta/lists/1463906). L'appel comporte plus de paramètres, notamment `endDate` pour dire à l'API jusqu'à quelle date/heure chercher, et un `timeframe` pour dire quelle période couvrir avant cette date/heure de fin.
+        
+        `https://api.crowdtangle.com/posts?token={votreToken}&listIds=1463906&count=100&sortBy=date&timeframe=24%20HOUR&endDate=2021-01-16T22:00:00`
 
       - *endpoint* `posts/search`
        
@@ -165,10 +169,15 @@
         
         `https://api.crowdtangle.com/posts/search?token={votreToken}&startDate=2020-07-01&endDate=2020-07-02&sortBy=total_interactions&platforms=facebook&accountTypes=facebook_page&pageAdminTopCountry=CA&searchTerm=a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,1,2,3,4,5,6,7,8,9,0&count=100&offset=3300`
           
-          
 ### Autres limites
 
+- Attention à l'illustion de la totalité. Par défaut, CrowdTangle ne couvre pas TOUT Facebook.
+
+![](https://downloads.intercomcdn.com/i/o/295103366/68f99a7bfc1fac4b6be717aa/Screen+Shot+2021-02-02+at+11.33.28+AM.png)
+
 ### Autres ressources
+
+- [Quelles données sont couvertes par CrowdTangle](https://help.crowdtangle.com/en/articles/1140930-what-data-is-crowdtangle-tracking)
 
 - [Academic FAQ](https://help.crowdtangle.com/en/articles/3323105-academics-researchers-faq)
 - [Naomi Shiffman](nshiffman@fb.com), *Academic Lead*
