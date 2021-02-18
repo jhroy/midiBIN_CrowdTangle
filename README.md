@@ -194,6 +194,7 @@
   - En février et en juillet 2020, j'ai effectué 24 extractions rigoureusement identiques avec cette liste de [101 médias du Québec](https://apps.crowdtangle.com/mdiasduqubec/lists/1341703).
   - J'ai demandé à CT de me sortir tous les posts publiés par ces pages durant l'année 2018, une journée à la fois avec les paramètres `startDate` et `endDate`:
 
+
   ```python
   for date in listeDates:
   	date2 = date + timedelta(days=1)
@@ -239,7 +240,8 @@
 
 ### Autres ressources
 
-- Il peut être possible de moissonner directement des pages Facebook en utilisant plutôt la version mobile d'une page. Il suffit de changer `www` par `m` dans l'URL de la page en question (ou de tout autre type de contenu sur FB).
+- Il peut être possible de moissonner directement des pages Facebook en utilisant plutôt la version mobile d'une page. Il suffit de changer `www` par `m` dans l'URL de la page en question (ou de tout autre type de contenu sur FB). La version mobile est plus facile à moissonner avec [BeautifulSoup](bit.ly/jhroybs4), par exemple.
+
   - Exemple: [https://www.facebook.com/leCIRST](https://www.facebook.com/leCIRST) vs [https://m.facebook.com/leCIRST](https://m.facebook.com/leCIRST)  
 
 - Comment consulter plusieurs «pages» d'un API?
