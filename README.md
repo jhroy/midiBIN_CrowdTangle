@@ -1,5 +1,7 @@
 # midiBIN_CrowdTangle (18 février 2021)
 
+Contenu, fichiers et liens pour [une présentation](https://www.cirst.uqam.ca/nouvelles/2021/midi-bin-colliger-des-donnees-avec-les-reseaux-sociaux/) dans le cadre des midis du [BIN (Bureau des initiatives numériques)](https://www.cirst.uqam.ca/bin/) du [CIRST (Centre interuniversitaire de recherche sur la science et la technologie)](https://www.cirst.uqam.ca/).
+
 ### Avant -> GraphAPI
 
 - [GraphAPI](https://developers.facebook.com/tools/explorer/) (existe toujours, mais est plus difficile d'accès)
