@@ -274,3 +274,5 @@ Contenu, fichiers et liens pour [une présentation](https://www.cirst.uqam.ca/no
 - [Quelles données sont couvertes par CrowdTangle](https://help.crowdtangle.com/en/articles/1140930-what-data-is-crowdtangle-tracking)
 - [Academic FAQ](https://help.crowdtangle.com/en/articles/3323105-academics-researchers-faq)
 - [Naomi Shiffman](nshiffman@fb.com), *Academic Lead*
+
+*Vous avez apprécié ce répertoire? Faites-le savoir en cliquant sur ⭐*
